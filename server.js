@@ -49,9 +49,9 @@ app.get('/about', (request, response) => {
 });
 
 
-app.get('/portafolio', (request, response) => {
-    response.render('portafolio.hbs', {
-        pageTitle: 'Portafolio Page'
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
