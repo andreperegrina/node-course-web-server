@@ -48,6 +48,13 @@ app.get('/about', (request, response) => {
     });
 });
 
+
+app.get('/portafolio', (request, response) => {
+    response.render('portafolio.hbs', {
+        pageTitle: 'Portafolio Page'
+    });
+});
+
 app.get('/bad', (request, response) => {
     response.send({
         errorMessage: 'Unable to handle request.'
